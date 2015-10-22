@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Device Specs</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="title_activity_proximiy_test">Proximiy Test</string>
+    <string name="title_activity_prox">ProxActivity</string>
+    <string name="title_activity_countdown">Countdown</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="proximitytest_descr">wave on proximity sensor as fast as possible</string>
+</resources>
