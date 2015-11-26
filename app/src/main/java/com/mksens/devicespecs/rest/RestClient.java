@@ -7,7 +7,7 @@ import com.mksens.devicespecs.R;
 import com.mksens.devicespecs.rest.api.ApiService;
 
 public class RestClient {
-    private static final String API_URL = "http://backend:8080";
+    private static final String API_URL = "http://148.6.80.94:8080";
     private static ApiService apiService;
 
     static {

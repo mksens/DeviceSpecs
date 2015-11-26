@@ -93,7 +93,7 @@ public class SensorsAdapter extends RecyclerView.Adapter<SensorsAdapter.ViewHold
             Log.d(TAG, "pos: " + pos);
             Log.d(TAG, "stat: " + stat.toString());
 
-            if (Sensor.STRING_TYPE_PROXIMITY.equals(stat.name)) {
+            if ("Proximity".equals(stat.name)) {
                 Intent proximity = new Intent(context, ProximityTestActivity.class);
                 context.startActivity(proximity);
             } else {

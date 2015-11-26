@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
     private void refresh() {
         Log.i(TAG, "refresh");
 
-        RestClient.get().getStat(DeviceSpecsApp.macAddress, Sensor.STRING_TYPE_PROXIMITY).enqueue(new Callback<Statistic>() {
+        RestClient.get().getStat(DeviceSpecsApp.macAddress, "Proximity").enqueue(new Callback<Statistic>() {
             @Override
             public void onResponse(Response<Statistic> response) {
                 Log.i(TAG, "onResponse");
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 Statistic stat = response.body();
 
                 if (stat != null) {
-                    stat.name = Sensor.STRING_TYPE_PROXIMITY;
+                    stat.name = "Proximity";
 
                     Log.d(TAG, "stat: " + stat.toString());
 
@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     sensorsAdapter.notifyDataSetChanged();
                 } else {
                     stat = new Statistic();
-                    stat.name = Sensor.STRING_TYPE_PROXIMITY;
+                    stat.name = "Proximity";
                     stat.ranking = -1;
 
                     sensorsAdapter.clear();
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "t: " + t.getMessage());
 
                 Statistic stat = new Statistic();
-                stat.name = Sensor.STRING_TYPE_PROXIMITY;
+                stat.name = "Proximity";
                 stat.ranking = -1;
 
                 sensorsAdapter.clear();

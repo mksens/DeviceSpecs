@@ -31,9 +31,6 @@ public class LoggerService extends Service {
 
     private DeviceSpecs deviceSpecs = new DeviceSpecs();
 
-    private GraphView graph;
-    private ArrayList<LineGraphSeries<DataPoint>> seriesList = new ArrayList<>();
-
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
